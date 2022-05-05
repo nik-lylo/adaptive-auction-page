@@ -1,0 +1,145 @@
+.footer {
+  background: $main-dark-color;
+  width: 100%;
+  padding: 45px 0px 53px 0px;
+  &__container {
+  }
+
+  &__flex {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.logo-footer {
+  &__image {
+    width: 173px;
+    height: 42px;
+    margin-right: 29px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__security {
+    font-size: 14px;
+    line-height: 21px;
+    color: $main-gold-color;
+    margin-top: 25px;
+  }
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 17px;
+  row-gap: 17px;
+  &__item {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "PFDinTextCondPro";
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.footer-phone {
+  margin-left: 40px;
+  &__number {
+    font-size: 40px;
+    color: $main-gold-color;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    white-space: nowrap;
+
+    & span {
+      font-size: 20px;
+      margin-right: 3px;
+      align-self: flex-start;
+    }
+  }
+
+  &__feedback {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    width: 100%;
+    font-size: 14px;
+    color: $main-gold-color;
+    white-space: nowrap;
+    & span {
+      width: 95px;
+      padding-left: 10px;
+      background: url(../../assets/image/footer/feedback.png);
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .footer-phone {
+    margin: 0px 0px 0px 20px;
+  }
+}
+
+@media (max-width: 878px) {
+  .footer-phone {
+    &__number {
+      font-size: 30px;
+      height: 30px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .footer-phone {
+    &__number {
+      font-size: 20px;
+      height: 20px;
+
+      & span {
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media (max-width: 676px) {
+  .footer {
+    &__flex {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      row-gap: 30px;
+    }
+  }
+  .logo-footer {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__security {
+      margin: 10px 0px 0px 0px;
+    }
+  }
+  .footer-nav {
+    flex: 1 1 100%;
+    padding: 0px 20px;
+    column-gap: 13px;
+    row-gap: 13px;
+  }
+  .footer-phone {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &__feedback {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

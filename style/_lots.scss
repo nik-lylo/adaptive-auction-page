@@ -1,0 +1,276 @@
+.lots {
+  &__container {
+    overflow: hidden;
+  }
+}
+.lots-decor {
+  margin-top: 21px;
+}
+.slider-lots {
+  margin: 0px -50px;
+  .swiper-wrapper {
+    align-items: stretch;
+  }
+  &__wrapper {
+    padding: 50px 0px;
+  }
+}
+.lots-card {
+  display: flex;
+  padding: 0px 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  &__image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__bg {
+    width: 249px;
+    height: 251px;
+    border: 3px solid $main-gold-color;
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__timer {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    bottom: -64px;
+  }
+  &__timer::before {
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    justify-self: center;
+    transform: rotate(-45deg);
+  }
+  &__icon {
+    position: relative;
+    z-index: 2;
+    width: 12px;
+    height: 15px;
+    background: url(../../assets/image/lots/sand_watch.png);
+    margin-bottom: 6px;
+  }
+
+  &__time {
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: "PT Sans Narrow";
+  }
+
+  &__name {
+    flex: 1 1 auto;
+    position: relative;
+    z-index: 4;
+    margin: 30px 0px;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: 500;
+    font-family: "PFDinTextCompPro";
+    text-transform: uppercase;
+    color: black;
+    word-break: keep-all;
+  }
+  &__button {
+    max-width: 203px;
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+.lots-card-price {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  &__decor {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__decor::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    border: 1px solid $main-gold-color;
+    transform: rotate(45deg);
+  }
+
+  &__viev {
+    flex: 0 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid $main-gold-color;
+  }
+  &__touch {
+    @extend .lots-card-price__viev;
+  }
+  &__rhomb {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  &__rhomb::before {
+    content: "";
+    display: block;
+    height: calc(25px * 0.7);
+    width: calc(25px * 0.7);
+    transform: rotate(45deg);
+    background-color: $main-dark-color;
+    position: absolute;
+  }
+
+  &__eye {
+    height: 8px;
+    width: 14px;
+    background: url(../../assets/image/lots/eye.png);
+    background-position: center;
+    position: relative;
+    z-index: 3;
+  }
+  &__hand {
+    height: 14px;
+    width: 11px;
+    background: url(../../assets/image/lots/palmhand.png);
+    background-position: center center;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__counter {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    flex: 1 1 100%;
+  }
+
+  &__current {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    font-size: 14px;
+    line-height: 25px;
+    color: black;
+    font-weight: 400;
+  }
+
+  &__number {
+    font-family: "BravoRG";
+    font-size: 50px;
+    line-height: 1;
+    margin-top: 4px;
+    position: relative;
+    z-index: 2;
+  }
+  &__currency {
+    font-weight: 500;
+    line-height: 1;
+    margin-top: -2px;
+    font-size: 17px;
+  }
+}
+
+.slider-lots-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__arrow {
+    width: 107px;
+    height: 35px;
+    background: url(../../assets/image/lots/double_arrow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    &_prev {
+      margin-right: 5px;
+    }
+    &_next {
+      margin-left: 5px;
+      transform: rotate(180deg);
+    }
+  }
+  &__round {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    border: 1px solid $main-gold-color;
+  }
+
+  &__circle {
+    height: 100px;
+    width: 100px;
+    background: url(../../assets/image/lots/elipse.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 37px;
+  }
+  &__circle::before {
+    content: "Всі Лоти";
+    text-transform: uppercase;
+    font-family: "PFDinTextCompPro";
+    font-weight: 500;
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 980px) {
+  .lots-card-price {
+    width: 251px;
+  }
+  .lots-card__name {
+    width: 251px;
+  }
+}
+@media (max-width: 445px) {
+  .slider-lots-control__circle {
+    margin: 0px 10px;
+  }
+}
+@media (max-width: 380px) {
+  .slider-lots-control__arrow {
+    width: 70px;
+  }
+}

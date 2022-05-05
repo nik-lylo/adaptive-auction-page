@@ -1,0 +1,123 @@
+.header {
+  background: $main-dark-color;
+  height: 75px;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__burger {
+    display: none;
+    position: relative;
+  }
+
+  &__logo {
+    @include adaptive-value("margin-right", $cont_width, 720, 80, 10);
+    margin-top: 14px;
+    align-self: flex-start;
+  }
+
+  &__region {
+    margin-right: 30px;
+    background: url("../../assets/icons/globe.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 0px 0px 0px 43px;
+    min-width: 40px;
+    min-height: 21px;
+  }
+  &__region:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 830px) {
+    &__region span {
+      display: none;
+    }
+    &__region {
+      margin-right: 10px;
+    }
+  }
+
+  &__menu {
+    width: 37px;
+    height: 20px;
+  }
+  &__menu {
+    & img {
+      object-fit: cover;
+      height: 20px;
+      width: 37px;
+    }
+  }
+}
+.nav-header-link {
+  color: #ffffff;
+  font-family: "PFDinTextCompPro";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  line-height: 1.5;
+  white-space: nowrap;
+  transition: all 0.4s ease;
+}
+.nav-header {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  &__link {
+    margin-right: 32px;
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
+  &__link:hover {
+    text-decoration: underline;
+  }
+}
+@media (max-width: 720px) {
+  .nav-header {
+    display: none !important;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    right: 0px;
+    height: calc(100vh - 75px);
+    background-color: rgba(27, 43, 55, 0.97);
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    z-index: 10;
+    &-link {
+      margin: 0px 0px 0px 0px;
+      padding: 3px 0px 3px 0px;
+      font-size: 16px;
+    }
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px 0px 0px 0px;
+  }
+  .header__container {
+    justify-content: space-between;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .header__region {
+    & span {
+      display: inline;
+    }
+    padding: 0px 0px 0px 0px;
+    background: none;
+  }
+  .nav-header._active {
+    display: flex !important;
+  }
+}

@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700&amp;subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular&amp;subset=cyrillic);
+// *PFDinTextCompPro
+@font-face {
+  font-family: "PFDinTextCompPro";
+  src: url("../../assets/fonts/PFDinTextCompPro-Medium.eot");
+  src: url("../../assets/fonts/PFDinTextCompPro-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/PFDinTextCompPro-Medium.woff2") format("woff2"),
+    url("../../assets/fonts/PFDinTextCompPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PFDinTextCondPro";
+  src: url("../../assets/fonts/PFDinTextCondPro-Regular.eot");
+  src: url("../../assets/fonts/PFDinTextCondPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/PFDinTextCondPro-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/PFDinTextCondPro-Regular.woff") format("woff"),
+    url("../../assets/fonts/PFDinTextCondPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// *IdealistSans
+@font-face {
+  font-family: "Idealist Sans";
+  src: url("../../assets/fonts/IdealistSans.eot");
+  src: url("../../assets/fonts/IdealistSans.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/IdealistSans.woff2") format("woff2"),
+    url("../../assets/fonts/IdealistSans.woff") format("woff"),
+    url("../../assets/fonts/IdealistSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// *Harbell Personal
+@font-face {
+  font-family: "Harbell Personal";
+  src: url("../../assets/fonts/HarbellPersonalUseOnly.eot");
+  src: url("../../assets/fonts/HarbellPersonalUseOnly.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/HarbellPersonalUseOnly.woff2") format("woff2"),
+    url("../../assets/fonts/HarbellPersonalUseOnly.woff") format("woff"),
+    url("../../assets/fonts/HarbellPersonalUseOnly.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// *Ceremonious One
+@font-face {
+  font-family: "Ceremonious One";
+  src: url("../../assets/fonts/CeremoniousOne.eot");
+  src: url("../../assets/fonts/CeremoniousOne.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/CeremoniousOne.woff2") format("woff2"),
+    url("../../assets/fonts/CeremoniousOne.woff") format("woff"),
+    url("../../assets/fonts/CeremoniousOne.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// *BravoRG
+@font-face {
+  font-family: "BravoRG";
+  src: url("../../assets/fonts/BravoRG.eot");
+  src: url("../../assets/fonts/BravoRG.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/BravoRG.woff2") format("woff2"),
+    url("../../assets/fonts/BravoRG.woff") format("woff"),
+    url("../../assets/fonts/BravoRG.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
