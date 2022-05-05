@@ -561,10 +561,61 @@ select {
   }
 }
 
+.loader {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(right, white 0%, #bb9c66 100%);
+  -webkit-animation: 3s linear 2s normal none infinite spin;
+          animation: 3s linear 2s normal none infinite spin;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader__cover {
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .header {
   background: #1c242a;
   height: 75px;
   width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 99;
 }
 
 .header__container {
@@ -752,13 +803,13 @@ select {
   width: 100%;
 }
 
-.advert-swiper-content {
+.advert-swiper .advert-swiper-content {
   padding: 34px 0px 0px 0px;
   position: relative;
   z-index: 2;
 }
 
-.advert-swiper-content__text {
+.advert-swiper .advert-swiper-content__text {
   font-size: 15px;
   line-height: 25px;
   max-width: 688px;
@@ -767,19 +818,19 @@ select {
   color: white;
 }
 
-.advert-swiper-content__btn {
+.advert-swiper .advert-swiper-content__btn {
   max-width: 250px;
   margin: 50px auto 100px auto;
 }
 
-.advert-swiper-control {
+.advert-swiper .advert-swiper-control {
   position: relative;
   z-index: 2;
   -webkit-transform: translate(0px, -50%);
           transform: translate(0px, -50%);
 }
 
-.advert-swiper-control__content {
+.advert-swiper .advert-swiper-control__content {
   margin: 0 auto;
   width: 100px;
   height: 100px;
@@ -795,7 +846,7 @@ select {
   position: relative;
 }
 
-.advert-swiper-control__block {
+.advert-swiper .advert-swiper-control__block {
   height: calc(100px * 0.7);
   width: calc(100px * 0.7);
   background: white;
@@ -813,7 +864,7 @@ select {
           justify-content: center;
 }
 
-.advert-swiper-control__buttons {
+.advert-swiper .advert-swiper-control__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -830,7 +881,7 @@ select {
   bottom: 0px;
 }
 
-.advert-swiper-control__arrow {
+.advert-swiper .advert-swiper-control__arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,26 +898,33 @@ select {
   cursor: pointer;
 }
 
-.advert-swiper-control__arrow_prev {
+.advert-swiper .advert-swiper-control__arrow_prev {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 
-.advert-swiper-control__arrow_next {
+.advert-swiper .advert-swiper-control__arrow_next {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.advert-swiper-control__icon {
+.advert-swiper .advert-swiper-control__icon {
   height: 26px;
   width: 26px;
-  border: 3px solid #bb9c66;
-  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0px 6px;
 }
 
 @media (max-width: 400px) {
-  .main-title__subtitle {
+  .advert-swiper .main-title__subtitle {
     font-size: 30px;
     letter-spacing: 4px;
   }
@@ -2131,4 +2189,5 @@ body {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   min-width: 0;
+  margin-top: 75px;
 }

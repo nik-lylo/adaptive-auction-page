@@ -2,6 +2,10 @@
   background: $main-dark-color;
   height: 75px;
   width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 99;
 
   &__container {
     display: flex;
